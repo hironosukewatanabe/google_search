@@ -1,24 +1,22 @@
 # README
+Googleでの検索結果一覧を表示するアプリケーションです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*  使用した技術等
+  - Rubyバージョン: 3.0.3
+  - Railsバージョン: 6.1.3
+  - Custom Search JSON API
 
-Things you may want to cover:
 
-* Ruby version
+* セットアップ
+  - credentialを再作成し、api_keyとcse_idを設定する。
+	```
+	custom_search:
+      api_key: # CustomSearchAPIのキー
+      cse_id: # サーチエンジンID
+	```
+  - dockerコンテナを起動する
+  ```
+	  docker-compose build
+	    docker-compose up
+	```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
